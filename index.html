@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <!-- STYLES -->
     <link rel="stylesheet" href="./css/main.css">
     <!-- BOOTSTRAP -->
@@ -14,21 +18,39 @@
     <main>
         <header class="header">
             <nav class="navbar">
-                <img src="assets/Logo TB.png" alt="TB Logo">
+                <a href="#home"><img src="assets/Logo TB.png" alt="TB Logo"></a>
                 <div class="navMenu">
-                    <a href="">Inicio</a>
-                    <a href="">Sobre mí</a>
-                    <a href="">Habilidades</a>
-                    <a href="">Proyectos</a>
-                    <a href="">Contacto</a>
+                    <a href="#home">Inicio</a>
+                    <a href="#about">Sobre mí</a>
+                    <a href="#skills">Habilidades</a>
+                    <a href="#projects">Proyectos</a>
+                    <a href="#contact">Contacto</a>
                 </div>
             </nav>
         </header>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section class="sectionA" id="home">
+            <div class="home">
+                <div class="home_data">
+                    <h1 class="home_data_info">
+                        Hola,
+                        <br>
+                        soy <span>Tomás</span>
+                        <br>
+                        Desarrollador FullStack
+                    </h1>
+                    <button class="home_data_contact" onclick="location.href='#contact'">Contacto</button>
+                    <div class="home_data_socials">
+                        <a href="https://www.linkedin.com/in/tomas-besso-87728b161" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/tomibesso" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+                    <img class="home_img" src="/assets/Tomi Portfolio.jpg" alt="Foto Carnet">
+            </div>
+        </section>
+        <section class="about sectionB" id="about"></section>
+        <section class="skills sectionA" id="skills"></section>
+        <section class="projects sectionB" id="projects"></section>
+        <section class="contact sectionA" id="contact"></section>
         <footer class="footer">
             <div class="divFooter">
                 <a href="https://www.facebook.com/tomi.besso" target="_blank"><i class="bi bi-facebook"></i></a>
