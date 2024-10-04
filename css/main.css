@@ -68,7 +68,18 @@ section {
 .sectionA {
   background-color: rgb(157, 157, 157);
 }
-.sectionA .home {
+.sectionA h2 {
+  color: rgb(125, 27, 27);
+}
+
+.sectionB {
+  background-color: rgb(125, 27, 27);
+}
+.sectionB h2 {
+  color: rgb(157, 157, 157);
+}
+
+.home {
   width: 80%;
   height: 100%;
   margin: auto;
@@ -77,25 +88,25 @@ section {
   justify-content: space-between;
   align-items: center;
 }
-.sectionA .home_data {
+.home_data {
   width: 450px;
   height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.sectionA .home_data_info {
+.home_data_info {
   line-height: 80px;
   font-family: "Kanit", "Times New Roman", Times, serif;
   font-weight: 500;
 }
-.sectionA .home_data_info span {
+.home_data_info span {
   font-style: italic;
   font-weight: 800;
   color: rgb(125, 27, 27);
   font-size: larger;
 }
-.sectionA .home_data_contact {
+.home_data_contact {
   width: 150px;
   height: 35px;
   border: 2px solid;
@@ -103,33 +114,88 @@ section {
   background-color: rgb(125, 27, 27);
   color: rgb(157, 157, 157);
 }
-.sectionA .home_data_contact:hover {
+.home_data_contact:hover {
   color: white;
   border-color: rgb(104, 30, 30);
   transform: scale(1.02);
   background-color: rgb(99, 0, 0);
 }
-.sectionA .home_data_socials {
+.home_data_socials {
   width: 25%;
   height: 20%;
   display: flex;
   justify-content: space-between;
   font-size: 48px;
 }
-.sectionA .home_data_socials i {
+.home_data_socials i {
   color: rgb(125, 27, 27);
 }
-.sectionA .home_data_socials i:hover {
+.home_data_socials i:hover {
   color: rgb(99, 0, 0);
 }
-.sectionA .home_img {
+.home_img {
   width: 350px;
   height: 450px;
   clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 91% 94%, 68% 100%, 32% 100%, 9% 94%, 0% 43%, 17% 12%);
 }
 
-.sectionB {
+.sectionTitle {
+  position: relative;
+  top: 40px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.about .aboutContent {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+.about .aboutContent img {
+  width: 330px;
+  height: 400px;
+  background-color: green;
+  border-radius: 50px;
+}
+.about .aboutContent p {
+  width: 600px;
+  height: 400px;
+  font-family: "Kanit", "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(157, 157, 157);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.skills .skillsContent {
+  width: 60%;
+  height: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 120px;
+}
+.skills .skillsContent .skillsBox {
   background-color: rgb(125, 27, 27);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(157, 157, 157);
+  transition: transform 0.3s ease;
+}
+.skills .skillsContent .skillsBox:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.skills .skillsContent .skillsBox p {
+  font-size: 20px;
+  font-family: "Kanit", "Times New Roman", Times, serif;
 }
 
 /*# sourceMappingURL=main.css.map */
