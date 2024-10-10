@@ -1,5 +1,5 @@
 section {
-    height: 620px;
+    height: 700px;
 }
 
 .sectionA {
@@ -90,7 +90,7 @@ section {
 }
 
 .about {
-    .aboutContent {
+    &_content {
         display: flex;
         justify-content: space-between;
         @include w-h(80%, 100%);
@@ -115,7 +115,7 @@ section {
 }
 
 .skills {
-    .skillsContent {
+    &_content {
         @include w-h(60%, 70%);
         margin: auto;
         display: grid;
@@ -123,7 +123,7 @@ section {
         row-gap: 20px;
         column-gap: 120px;
 
-        .skillsBox {
+        &_box {
             background-color: $vinotinto;
             border-radius: 15px;
             display: flex;
@@ -141,6 +141,69 @@ section {
             p {
                 font-size: 20px;
                 font-family: 'Kanit', 'Times New Roman', Times, serif;
+            }
+        }
+    }
+}
+
+.projects {
+    &_content {
+        @include w-h(80%, 80%);
+        margin: auto;
+        position: relative;
+        bottom: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+
+        &_image {
+            position: relative;
+            overflow: hidden;
+
+            img {
+                @include w-h(100%, 100%);
+                border-radius: 10px;
+                border: 2px solid rgba(0, 0, 0, 0.241);
+            }
+            
+            &_overlay {
+                background-color: black;
+                border-radius: 10px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                @include w-h (100%, 100%);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h3 {
+                    position: relative;
+                    bottom: 20px;
+                    color: white;
+                }
+
+                a {
+                    color: white;
+                    position: relative;
+                    font-size: large;
+                    font-weight: 500;
+                    @include w-h(60%, 20%);
+
+                    &:hover {
+                        color: rgba(255, 255, 255, 0.636);
+                        transform: scale(1.025);
+                        transition: scale 0.3s ease;
+                    } 
+                }
+
+                &:hover {
+                    opacity: 0.85;
+                }
             }
         }
     }

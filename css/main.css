@@ -62,7 +62,7 @@
 }
 
 section {
-  height: 620px;
+  height: 700px;
 }
 
 .sectionA {
@@ -146,20 +146,20 @@ section {
   text-align: center;
 }
 
-.about .aboutContent {
+.about_content {
   display: flex;
   justify-content: space-between;
   width: 80%;
   height: 100%;
   margin: auto;
 }
-.about .aboutContent img {
+.about_content img {
   width: 330px;
   height: 400px;
   background-color: green;
   border-radius: 50px;
 }
-.about .aboutContent p {
+.about_content p {
   width: 600px;
   height: 400px;
   font-family: "Kanit", "Times New Roman", Times, serif;
@@ -170,7 +170,7 @@ section {
   margin-top: 30px;
 }
 
-.skills .skillsContent {
+.skills_content {
   width: 60%;
   height: 70%;
   margin: auto;
@@ -179,7 +179,7 @@ section {
   row-gap: 20px;
   column-gap: 120px;
 }
-.skills .skillsContent .skillsBox {
+.skills_content_box {
   background-color: rgb(125, 27, 27);
   border-radius: 15px;
   display: flex;
@@ -189,13 +189,71 @@ section {
   color: rgb(157, 157, 157);
   transition: transform 0.3s ease;
 }
-.skills .skillsContent .skillsBox:hover {
+.skills_content_box:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px rgb(255, 255, 255);
 }
-.skills .skillsContent .skillsBox p {
+.skills_content_box p {
   font-size: 20px;
   font-family: "Kanit", "Times New Roman", Times, serif;
+}
+
+.projects_content {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  position: relative;
+  bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.projects_content_image {
+  position: relative;
+  overflow: hidden;
+}
+.projects_content_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.241);
+}
+.projects_content_image_overlay {
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projects_content_image_overlay h3 {
+  position: relative;
+  bottom: 20px;
+  color: white;
+}
+.projects_content_image_overlay a {
+  color: white;
+  position: relative;
+  font-size: large;
+  font-weight: 500;
+  width: 60%;
+  height: 20%;
+}
+.projects_content_image_overlay a:hover {
+  color: rgba(255, 255, 255, 0.636);
+  transform: scale(1.025);
+  transition: scale 0.3s ease;
+}
+.projects_content_image_overlay:hover {
+  opacity: 0.85;
 }
 
 /*# sourceMappingURL=main.css.map */

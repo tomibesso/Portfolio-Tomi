@@ -12,6 +12,8 @@
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Portfolio Tomi</title>
 </head>
 <body>
@@ -49,13 +51,13 @@
         </section>
         <section class="about sectionB" id="about">
             <h2 class="sectionTitle">Sobre Mí</h2>
-            <div class="aboutContent">
+            <div class="about_content">
                 <img src="/assets/Tomi Portfolio 2.jpg" alt="Foto Tomi 2">
                 <p>
                     Soy un desarrollador apasionado por crear soluciones dinámicas y eficientes. Tengo un sólido conocimiento en
                     JavaScript, React, Node.js y Express, respaldado por experiencia en desarrollo web completo, desde la construcción
                     de interfaces amigables hasta la gestión de servidores y bases de datos con MongoDB. Mi enfoque se centra en
-                    escribir código limpio y optimizado, con un gran interés en el trabajo en equipo, la resolución de problemas y la
+                    escribir Ver en GitHub limpio y optimizado, con un gran interés en el trabajo en equipo, la resolución de problemas y la
                     mejora continua. Me motiva aprender constantemente nuevas tecnologías para seguir creciendo en este apasionante
                     mundo del desarrollo web.
                 </p>
@@ -63,46 +65,98 @@
         </section>
         <section class="skills sectionA" id="skills">
             <h2 class="sectionTitle">Habilidades</h2>
-            <div class="skillsContent">
-                <div class="skillsBox">
+            <div class="skills_content">
+                <div class="skills_content_box">
                     <p>HTML</p>
                     <img src="/assets/Logo HTML.svg" alt="Logo HTML">
                 </div>
-                <div class="skillsBox">
+                <div class="skills_content_box">
                     <p>CSS</p>
                     <img src="/assets/Logo CSS.svg" alt="Logo CSS">
                 </div>
-                <div class="skillsBox">
+                <div class="skills_content_box">
                     <p>JAVASCRIPT</p>
                     <img src="/assets/Logo JAVASCRIPT.svg" alt="Logo JAVASCRIPT">
                 </div>
-                <div class="skillsBox">
+                <div class="skills_content_box">
                     <p>SASS</p>
                     <img src="/assets/Logo SASS.svg" alt="Logo SASS">
                 </div>
-                <div class="skillsBox">
+                <div class="skills_content_box">
                     <p>BOOTSTRAP</p>
                     <img src="/assets/Logo BOOTSTRAP.svg" alt="Logo BOOTSTRAP">
                 </div>
-                <div class="skillsBox">
+                <div class="skills_content_box">
                     <p>REACT JS</p>
                     <img src="/assets/Logo REACT JS.svg" alt="Logo REACT JS">
                 </div>
-                <div class="skillsBox">
+                <div class="skills_content_box">
                     <p>NODE JS</p>
                     <img src="/assets/Logo NODE JS.svg" alt="Logo NODE JS">
                 </div>
-                <div class="skillsBox">
+                <div class="skills_content_box">
                     <p>EXPRESS JS</p>
                     <img src="/assets/Logo EXPRESS JS.svg" alt="Logo EXPRESS JS">
                 </div>
-                <div class="skillsBox">
+                <div class="skills_content_box">
                     <p>MONGO DB</p>
                     <img src="/assets/Logo MONGO DB.png" alt="Logo MONGO DB">
                 </div>
             </div>
         </section>
-        <section class="projects sectionB" id="projects"></section>
+        <section class="projects sectionB" id="projects">
+            <h2 class="sectionTitle">Proyectos</h2>
+            <div class="projects_content">
+                <div class="projects_content_image">
+                    <img src="/assets/Screenshot-Proyecto-DesarrolloWeb.png" alt="Proyecto Desarrollo Web">
+                    <div class="projects_content_image_overlay">
+                        <h3>Desarrollo Web</h3>
+                        <a href="https://tomibesso.github.io/PF-Besso/" class="btn" target="_blank">Desplegar</a>
+                        <a href="https://github.com/tomibesso/PF-Besso.git" class="btn" target="_blank">Ver en GitHub</a>
+                    </div>
+                </div>
+                <div class="projects_content_image">
+                    <img src="/assets/Screenshot-Proyecto-JavaScript.png" alt="Proyecto Javascript">
+                    <div class="projects_content_image_overlay">
+                        <h3>Javascript</h3>
+                        <a href="https://tomibesso.github.io/ProyectoFinalJavascript-Besso/" class="btn" target="_blank">Desplegar</a>
+                        <a href="https://github.com/tomibesso/ProyectoFinalJavascript-Besso.git" class="btn" target="_blank">Ver en GitHub</a>
+                    </div>
+                </div>
+                <div class="projects_content_image">
+                    <img src="/assets/Screenshot-Proyecto-ReactJS.png" alt="Proyecto React">
+                    <div class="projects_content_image_overlay">
+                        <h3>React JS</h3>
+                        <a href="#" class="btn" id="reactDeployButton" target="_blank">Desplegar</a>
+                        <a href="https://github.com/tomibesso/Proyecto-React-JS-nuevo-.git" class="btn" target="_blank">Ver en GitHub</a>
+                    </div>
+                </div>
+                <div class="projects_content_image">
+                    <img src="/assets/Screenshot-Proyecto-ListaTareas.png" alt="Proyecto Lista de Tareas">
+                    <div class="projects_content_image_overlay">
+                        <h3>Lista de Tareas</h3>
+                        <a href="https://tomibesso.github.io/Proyecto-Lista-de-Tareas/" class="btn" target="_blank">Desplegar</a>
+                        <a href="https://github.com/tomibesso/Proyecto-Lista-de-Tareas.git" class="btn" target="_blank">Ver en GitHub</a>
+                    </div>
+                </div>
+                <div class="projects_content_image">
+                    <img src="/assets/Screenshot-Proyecto-PaletaColores.png" alt="Proyecto Paleta de Colores">
+                    <div class="projects_content_image_overlay">
+                        <h3>Generador de Paleta</h3>
+                        <a href="https://tomibesso.github.io/Proyecto-Generador-de-Paleta-de-Colores/" class="btn" target="_blank">Desplegar</a>
+                        <a href="https://github.com/tomibesso/Proyecto-Generador-de-Paleta-de-Colores.git" class="btn" target="_blank">Ver en GitHub</a>
+                    </div>
+                </div>
+                <div class="projects_content_image">
+                    <img src="/assets/Screenshot-Proyecto-BackEnd.png" alt="Proyecto BackEnd">
+                    <div class="projects_content_image_overlay">
+                        <h3>Programación BackEnd</h3>
+                        <a href="https://proyecto-backend-besso-production.up.railway.app/products" class="btn" target="_blank">Desplegar</a>
+                        <a href="https://github.com/tomibesso/Proyecto-BackEnd-Besso.git" class="btn" target="_blank">Ver en GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="contact sectionA" id="contact"></section>
         <footer class="footer">
             <div class="divFooter">
@@ -114,6 +168,18 @@
         </footer>
     </main>
 
+    <script>
+        document.getElementById('reactDeployButton').addEventListener('click', function(event) {
+            event.preventDefault();
+            
+            Swal.fire({
+                title: 'Intrucciones para despliegue:',
+                text: 'Este proyecto de React JS necesita ejecutarse localmente. Abre una terminal y ejecuta los comandos: "npm run dev" o "npm run preview" para desplegarlo en tu navegador.',
+                icon: 'info',
+                confirmButtonText: 'Ok'
+            });
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
