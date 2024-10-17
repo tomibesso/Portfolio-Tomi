@@ -42,6 +42,11 @@
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+.header .navbar .navMenu a:hover {
+  color: rgba(255, 255, 255, 0.732);
+  transform: scale(1.02);
 }
 
 .footer {
@@ -59,6 +64,11 @@
 .footer a {
   color: rgb(157, 157, 157);
   font-size: 50px;
+  transition: color 0.3s ease;
+}
+.footer a:hover {
+  color: rgba(255, 255, 255, 0.732);
+  transform: scale(1.02);
 }
 
 section {
@@ -156,7 +166,6 @@ section {
 .about_content img {
   width: 330px;
   height: 400px;
-  background-color: green;
   border-radius: 50px;
 }
 .about_content p {

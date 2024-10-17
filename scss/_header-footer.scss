@@ -34,6 +34,12 @@
                 font-family: "Oswald", sans-serif;
                 font-weight: 600;
                 text-decoration: none;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: rgba(255, 255, 255, 0.732);
+                    transform: scale(1.02);
+                }
             }
         }
     }
@@ -55,5 +61,11 @@
     a {
         color: rgb(157, 157, 157);
         font-size: 50px;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.732);
+            transform: scale(1.02);
+        }
     }
 }
