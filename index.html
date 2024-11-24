@@ -160,13 +160,13 @@
         <section class="contact sectionA" id="contact">
             <h2 class="sectionTitle">Contacto</h2>ç
             <div class="contact_content">
-                <form class="contact_content_form">
+                <form class="contact_content_form" id="contact_content_form">
                     <div class="contact_content_form_names">
-                        <input type="text" placeholder="Nombre">
-                        <input type="text" placeholder="Apellido">
+                        <input type="text" name="from_firstName" placeholder="Nombre" required>
+                        <input type="text" name="from_lastName" placeholder="Apellido" required>
                     </div>
-                    <input class="contact_content_form_mail" type="text" placeholder="Correo Electrónico">
-                    <textarea class="contact_content_form_message" type="text" placeholder="Deje su mensaje aquí"></textarea>
+                    <input class="contact_content_form_mail" type="text" name="from_email" placeholder="Correo Electrónico" required>
+                    <textarea class="contact_content_form_message" type="text" name="message" placeholder="Deje su mensaje aquí" required></textarea>
                     <button class="contact_content_form_button">Enviar</button>
                 </form>
             </div>
@@ -181,6 +181,7 @@
         </footer>
     </main>
 
+    <!-- SWEET ALERT -->
     <script>
         document.getElementById('reactDeployButton').addEventListener('click', function(event) {
             event.preventDefault();
@@ -193,6 +194,13 @@
             });
         });
     </script>
+    <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- EMAIL JS -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <!-- MI JS -->
+     <script src="js/contactForm.js"></script>
 </body>
 </html>
